@@ -1,92 +1,87 @@
 $mobile: new-breakpoint(max-width 800px 4);
 
 .offcanvas-social {
-	position: absolute;
-	right: 0;
-	/* background: #333; */
-	padding: 15px;
-	bottom: 0;
-	width: 182px;
-	text-align: right;
+  position: absolute;
+  right: 0;
+  /* background: #333; */
+  padding: 15px;
+  bottom: 0;
+  width: 182px;
+  text-align: right;
 
-	a {
-		margin: 0 10px;
-		color: #fff;
-		text-decoration: none;
-		font-size: 25px;
+  a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+  }
 
-	}
-
-	svg {
-		width:20px; 
-		height:20px;
-	}
+  svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .offcanvas-logo {
-	position: absolute;
-	top: 24px;
-	left: 15px;
+  position: absolute;
+  top: 24px;
+  left: 15px;
 }
-
-
-
 
 //$mobile: new-breakpoint(max-width 800px 4);
 
 .offcanvas {
-	position: fixed;
-	top: 0;
-	right: -310px;
-	z-index: 301;
-	background: #57a9d4;
-	bottom: 0;
-	width: 300px;
-	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
-	-moz-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
-	transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
-	//padding-top: 70px;
+  position: fixed;
+  top: 0;
+  right: -310px;
+  z-index: 301;
+  background: #141414;
+  bottom: 0;
+  width: 300px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  //padding-top: 70px;
 
-	nav {
+  nav {
+  }
 
-	}
-
-	a {
-		color: #fff;
-	}
+  a {
+    color: #fff;
+  }
 }
 
 .toogle-btn {
-	color: #fff;
+  color: #fff;
 }
 
 .sliding-panel-content {
   $action-color: #ddd !default;
   $dark-gray: #f9f9f9 !default;
-  $sliding-panel-border-color: #346680;
+  $sliding-panel-border-color: #333;
   $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
   $sliding-panel-color: #fff;
   $sliding-panel-border: 1px solid $sliding-panel-border-color;
-  $sliding-panel-background-hover: #4c85a2;
+  $sliding-panel-background-hover: #333;
   $sliding-panel-color-hover: #fff;
   $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
 
-	//position: fixed;
-	//top: 0;
-	//right: auto;
-	//bottom: 0;
-	//left: 0;
-	//background-size: 220px 100%;
-	//background: $sliding-panel-background;
-	//-webkit-overflow-scrolling: touch;
-	//overflow-y: auto;
-	//transform: translateX(-220px);
-	//-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
-	//-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
-	//transition: all .4s cubic-bezier(0.7,0,.3,1);
-	//z-index: 999999;
-	//width: 220px;
+  //position: fixed;
+  //top: 0;
+  //right: auto;
+  //bottom: 0;
+  //left: 0;
+  //background-size: 220px 100%;
+  //background: $sliding-panel-background;
+  //-webkit-overflow-scrolling: touch;
+  //overflow-y: auto;
+  //transform: translateX(-220px);
+  //-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
+  //-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
+  //transition: all .4s cubic-bezier(0.7,0,.3,1);
+  //z-index: 999999;
+  //width: 220px;
 
   ul {
     padding: 25px 0 0 0;
@@ -141,31 +136,27 @@ $mobile: new-breakpoint(max-width 800px 4);
 }
 
 .sliding-panel-button {
-	cursor: pointer;
-	outline: none;
-	padding: 10px 16px;
-	position: fixed;
-	right: -60px;
-	top: 16px;
-	z-index: 9999;
-	-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
-	-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
-	transition: all .4s cubic-bezier(0.7,0,.3,1);
-	background: none;
-	border: none;
-	font-size: 35px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 16px;
+  position: fixed;
+  right: -60px;
+  top: 16px;
+  z-index: 9999;
+  -webkit-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  background: none;
+  border: none;
+  font-size: 35px;
 
-	/*
+  /*
 	@include media($mobile) {
 		right: 10px;
 		top: 0;
 	}*/
 
-
-
-
-
-	img {
-		height: 1.3em;
-	}
+  img {
+    height: 1.3em;
+  }
 }
