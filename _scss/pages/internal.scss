@@ -1,0 +1,29 @@
+.main-container.internal {
+	section {
+		min-height: 100vh;
+	}
+}
+
+.top-bar.internal {
+	&.headroom--not-top {
+		background: #FFF;
+		a {
+			color: #333;
+			
+			&:hover:after {
+				width: 100%;
+				background-color: #333;
+			}
+		}
+
+		.st0 {
+			fill: #333;
+		}
+
+		.active {
+			
+		}
+	}
+
+	
+}

@@ -1,0 +1,33 @@
+  <footer style="display: none;">
+    <a class="logo logo-foot" href="/">
+      <img src="{{ site.baseurl }}/img/logo-fedescharger.svg" width="210px">
+    </a> <br>
+  </footer>
+
+  <div class="js-menu-screen sliding-panel-fade-screen"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    jQuery(document).ready(function($) {
+        // grab an element
+        var myElement = document.querySelector("#masthead");
+        // construct an instance of Headroom, passing the element
+        var headroom = new Headroom(myElement, {
+          "offset": 330,
+          "tolerance": 0
+        });
+        // initialise
+        headroom.init(); 
+    });
+  </script>
+
+    {% include fancybox.html %}
+  {% include scroll-to.html %}
+  {% include owl-carousel.html %}
+  {% include tooltipster.html %}
+  {% include animated-headline.html %}
+  {% include offcanvas.html %}
+
+
+</body>

@@ -1,0 +1,142 @@
+.sec-about {
+  //background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/06/Puelo_Lake.jpg);
+  background-color: #141414;
+  background-size: cover;
+
+  .item-image {
+    position: absolute;
+    left: 10vw;
+    top: 30vh;
+    z-index: 1;
+  }
+
+  .item-misc {
+    position: absolute;
+    right: 10vw;
+    top: 30vh;
+    z-index: 1;
+  }
+
+  .svg-circle {
+    position: absolute;
+    right: 5vw;
+    top: 45vh;
+    z-index: 1;
+  }
+
+  .item-title {
+    position: absolute;
+    left: 25vw;
+    width: 60vw;
+    top: 45vh;
+    z-index: 2;
+  }
+
+  .item-quote {
+    position: absolute;
+    left: 31vw;
+    bottom: 5vh;
+    z-index: 2;
+    max-width: 220px;
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+
+    @include media($mobile) {
+    }
+
+    .item-misc-red {
+      position: absolute;
+      left: 0;
+      top: -40px;
+      z-index: 1;
+    }
+  }
+
+  .inner-wrapper {
+    max-width: 900px;
+    padding-top: 30px;
+  }
+}
+
+.internal {
+  .sec-about {
+    background: #fff !important;
+    padding: 0;
+
+    h2 {
+      text-align: center;
+      border-bottom: 0 none;
+    }
+
+    h4 {
+      color: #4a6686;
+      text-align: center;
+      border-bottom: 2px solid;
+      padding: 0 15px;
+      padding-bottom: 25px;
+
+      @include media($mobile) {
+        font-size: 30px;
+      }
+    }
+
+    article {
+      padding: 1em 0.5em;
+      box-shadow: 0 18px 17px 0 rgba(0, 0, 0, 0), 0 3px 5px 0 rgba(0, 0, 0, 0);
+
+      p {
+        max-width: 650px;
+        margin: 15px auto;
+      }
+
+      .subheader {
+        color: #999;
+        font-size: 29px;
+        line-height: 42px;
+        text-align: center;
+        font-weight: 100;
+        margin-bottom: 75px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .logo {
+    svg {
+      width: 240px;
+    }
+  }
+
+  .featured-image {
+    max-height: 400px;
+    overflow: hidden;
+    background-color: #333;
+
+    img {
+      opacity: 0.5;
+    }
+
+    h2 {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 170px;
+      z-index: 1;
+      color: #fff;
+      border-bottom: 0 none;
+    }
+
+    @include media($mobile) {
+      img {
+        width: auto !important;
+        height: 100%;
+      }
+      h2 {
+        top: 100px;
+        padding: 0 20px;
+      }
+    }
+  }
+}

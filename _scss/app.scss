@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300&display=swap");
+
+$main-font: "Rubik Mono One", sans-serif;
+$mono-font: "IBM Plex Mono", monospace;
+
+@import "plugins/bourbon/bourbon";
+@import "plugins/neat/neat";
+@import "plugins/owl-carousel";
+@import "plugins/fullpage";
+@import "plugins/animated";
+@import "plugins/tooltipster";
+@import "modules/offcanvas";
+@import "modules/booking";
+@import "modules/footer";
+@import "modules/headroom";
+@import "modules/animated-headline";
+@import "modules/top-bar";
+@import "pages/home";
+@import "pages/lago-puelo";
+@import "pages/alojamiento";
+@import "pages/ubicacion";
+@import "pages/contacto";
+@import "pages/internal";
+
+.none {
+  display: none;
+}
+
+body {
+  //background-color: #43bdfc;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $mono-font;
+  font-weight: 300;
+  margin: 0;
+  padding: 0 0 0 0;
+  overflow-x: hidden !important;
+}
+
+@media screen and (max-width: 800px) {
+  .sliding-panel-button {
+    right: 10px;
+    top: 8px;
+    color: #fff !important;
+  }
+
+  .sliding-panel-button-internal {
+    color: #333 !important;
+  }
+
+  .headroom--top .sliding-panel-button-internal {
+    color: #fff !important;
+  }
+
+  .top-bar {
+    //display: none;
+  }
+
+  .top-bar-wrapper {
+    nav {
+      display: none;
+    }
+  }
+
+  .inner-wrapper {
+    padding-left: 0px !important;
+  }
+
+  .sec-hero {
+    opacity: 1;
+  }
+
+  .photo-album {
+    a {
+      width: 48%;
+      margin: 1%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  section {
+    padding: 1em;
+  }
+
+  .social {
+    display: none !important;
+  }
+
+  .logo {
+    top: 10px;
+    img {
+      width: 250px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{% include head.html %}
+
+<span id="arriba" style="position: absolute; top: 0"></span>
+<div class="offcanvas js-menu sliding-panel-content">
+  <ul>
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/about">about</a></li>
+    <li><a href="/media">media</a></li>
+    <li><a href="/contact">contact</a></li>
+  </ul>
+</div>
+
+<div class="top-bar" id="masthead">
+  <div class="top-bar-wrapper">
+    <a class="logo" href="/">
+      <img src="{{ site.baseurl }}/img/logo-fedescharger.svg" width="240px" />
+    </a>
+    <nav id="menu-superior" class="menu menu--yona">
+      <div data-menuanchor="about" class="menu__item">
+        <a class="menu__item-name" href="#about">about</a>
+      </div>
+      <div data-menuanchor="media" class="menu__item">
+        <a class="menu__item-name" href="#media">media</a>
+      </div>
+      <div data-menuanchor="contact" class="menu__item">
+        <a class="menu__item-name" href="#contact">contact</a>
+      </div>
+    </nav>
+  </div>
+  <button type="button" class="toogle-btn js-menu-trigger sliding-panel-button">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+</div>
+
+<div class="main-container">
+  {{content}}
+</div>
+
+{% include footer.html %}

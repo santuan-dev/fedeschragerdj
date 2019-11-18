@@ -1,0 +1,23 @@
+$desktop: new-breakpoint(max-width 1200px 4);
+.owl-carousel {
+  background: #333;
+
+  .owl-stage-outer {
+    opacity: 1;
+  }
+}
+
+.owl-dots {
+  //display: none;
+}
+
+.owl-carousel .owl-item img {
+  @include media($desktop) {
+    height: 100vh;
+    width: auto;
+  }
+}
+
+.owl-carousel .owl-stage-outer {
+  //height: 100vh !important;
+}

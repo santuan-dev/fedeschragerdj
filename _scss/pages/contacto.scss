@@ -1,0 +1,38 @@
+.sec-contacto {
+  background: #141414;
+  background-image: url("./img/contact/back-contact.jpg");
+  .inner-wrapper {
+    max-width: 1400px;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    .form,
+    .metadata {
+      flex: 1;
+    }
+  }
+
+  h4 {
+    font-size: 22px;
+    letter-spacing: 0;
+    margin: 5px 0;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  @include media($mobile) {
+    .social-container {
+      .fa {
+        font-size: 33px !important;
+      }
+
+      img {
+        width: 25px;
+      }
+    }
+  }
+}

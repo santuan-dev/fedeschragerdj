@@ -1,0 +1,222 @@
+.item-image {
+  position: absolute;
+  left: 30vw;
+  top: 30vh;
+  z-index: 2;
+}
+
+.item-title {
+  position: absolute;
+  left: 10vw;
+  top: 25vh;
+  z-index: 2;
+}
+
+.item-quote {
+  position: absolute;
+  right: 5vw;
+  bottom: 5vh;
+  z-index: 2;
+}
+
+.svg-circle {
+  position: absolute;
+  right: 15vw;
+  top: 1vh;
+  z-index: 1;
+}
+
+.down-arrow {
+  position: absolute;
+  left: calc(50vw - 35px);
+  width: 70px;
+  bottom: 2vh;
+  z-index: 2;
+  transition: all 1s;
+  &:hover {
+    transform: scale(0.8);
+  }
+}
+/*
+
+
+
+*/
+
+section {
+  //min-height: 100vh;
+  padding: 0 0;
+  color: #fff;
+
+  .inner-wrapper {
+    margin: 0 auto;
+    max-width: 1020px;
+    padding-top: 70px;
+    //padding-bottom: 150px;
+    //padding-left: 200px;
+  }
+
+  p {
+  }
+}
+
+.sec-hero {
+  //background-image: url("/img/back-hero-home.jpg");
+  background-size: 100%;
+  background: #141414;
+  background-position: center;
+  min-height: auto;
+  padding: 0;
+
+  .hero-heading {
+    position: absolute;
+    z-index: 100;
+    top: 25%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+
+    @include media($mobile) {
+    }
+
+    h1 {
+      margin: 0 0 10px 0;
+    }
+
+    .button {
+      letter-spacing: 1px;
+    }
+  }
+
+  .inner-wrapper {
+    padding: 0;
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+    height: 100vh;
+  }
+}
+
+.ui.button {
+  //font-family: $main-font !important;
+  //text-transform: uppercase;
+}
+
+.photo-album {
+  //display: flex;
+  //flex-wrap: wrap;
+
+  a {
+    //width: 31%;
+    //margin: 1%;
+
+    img {
+      //width: 100%
+    }
+  }
+}
+
+.social {
+  padding: 15px 0;
+  /* bottom: 50px; */
+  width: 162px;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  z-index: 400;
+  -webkit-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
+
+  a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.book-now-container {
+  position: fixed;
+  bottom: 15px;
+  right: 0;
+  padding-right: 15px;
+  z-index: 1;
+  -webkit-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+
+  @include media($mobile) {
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: #f2711c;
+    bottom: 0;
+    padding: 5px;
+  }
+
+  &:hover {
+    //transform: scale(1.01);
+  }
+
+  .book-now {
+    /* border-radius: 5px; */
+    text-transform: uppercase;
+
+    .fa {
+      margin-right: 5px;
+    }
+  }
+}
+
+.fp-viewing-alojamiento {
+  .top-bar {
+    background: rgba(40, 43, 41, 0.58);
+    padding: 0;
+  }
+  .social {
+    padding: 3px 0;
+  }
+}
+
+.fp-viewing-lago-puelo {
+  .top-bar {
+    background: rgba(40, 43, 41, 0.58);
+    padding: 0;
+  }
+  .social {
+    padding: 3px 0;
+  }
+}
+
+.fp-viewing-ubicacion {
+  .top-bar {
+    background: rgba(40, 43, 41, 0.58);
+    padding: 0;
+  }
+  .social {
+    padding: 3px 0;
+  }
+}
+
+.fp-viewing-contacto {
+  .top-bar {
+    background: rgba(40, 43, 41, 0.58);
+    padding: 0;
+  }
+  .social {
+    padding: 3px 0;
+  }
+}
