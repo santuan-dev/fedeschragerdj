@@ -1,6 +1,6 @@
 .item-image {
   position: absolute;
-  left: 30vw;
+  left: 20vw;
   top: 30vh;
   z-index: 2;
   &:hover {
@@ -10,7 +10,7 @@
 
 .item-title {
   position: absolute;
-  left: 10vw;
+  left: 5vw;
   top: 25vh;
   z-index: 2;
   &:hover {
@@ -30,8 +30,8 @@
 
 .svg-circle {
   position: absolute;
-  right: 15vw;
-  top: 1vh;
+  right: 0;
+  top: 15vh;
   z-index: 1;
   &:hover {
     transform: scale(0.95) !important;
@@ -40,10 +40,14 @@
 
 .down-arrow {
   position: absolute;
-  left: calc(50vw - 35px);
-  width: 70px;
-  bottom: 2vh;
+  left: 0;
+  width: 100%;
+  bottom: 15px;
   z-index: 2;
+  right: 0;
+  transition: all 0.5s;
+  text-align: center;
+
   &:hover {
     transform: scale(0.8) !important;
   }
@@ -104,7 +108,7 @@ section {
   .inner-wrapper {
     padding: 0;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 1390px;
     position: relative;
     height: 100vh;
   }
