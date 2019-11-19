@@ -2,143 +2,277 @@
 layout: default
 ---
 
-
 <div id="fullpage">
-<section class=" sec-hero section fp-noscroll" id="section-inicio" data-anchor="inicio" >
-		<div class="inner-wrapper">
-			<img src="{{site.baseurl}}/img/home/home-slider.jpg" alt="" class="item-image" width="400px">
-			<img src="{{site.baseurl}}/img/home/quote.svg" alt="" class="item-title" width="400px">
-			<img src="{{site.baseurl}}/img/home/keith.svg" alt="" class="item-quote" width="200px">
-			<img src="{{site.baseurl}}/img/home/circle.svg" alt="" class="svg-circle"  width="600px">
-			<a href="#section-about">
-				<img src="{{site.baseurl}}/img/home/down-arrow.svg" alt="" class="down-arrow"  width="70px">
-			</a>
-			
-			<div class="owl-carousel owl-theme" style="display: none;">
-				<div class="item">
-			    	<img src="{{site.baseurl}}/img/home/home-slider.jpg" alt="">
-			    </div>
-			     <div class="item">
-			    	<img src="{{site.baseurl}}/img/home/home-slider.jpg" alt="">
-			    </div>
-			    <div class="item">
-			    	<img src="{{site.baseurl}}/img/home/home-slider.jpg" alt="">
-			    </div>
+  <section
+    class=" sec-hero section fp-noscroll"
+    id="section-inicio"
+    data-anchor="inicio"
+  >
+    <div class="inner-wrapper">
+      <img
+        src="{{site.baseurl}}/img/home/home-slider.jpg"
+        alt=""
+        class="item-image"
+        width="400px"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      />
+      <img
+        src="{{site.baseurl}}/img/home/quote.svg"
+        alt=""
+        class="item-title"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        width="400px"
+      />
+      <img
+        src="{{site.baseurl}}/img/home/keith.svg"
+        alt=""
+        class="item-quote"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        width="200px"
+      />
+      <img
+        src="{{site.baseurl}}/img/home/circle.svg"
+        alt=""
+        class="svg-circle"
+        data-aos="zoom-in-up"
+        width="600px"
+      />
+      <a href="#section-about">
+        <img
+          src="{{site.baseurl}}/img/home/down-arrow.svg"
+          alt=""
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          class="down-arrow"
+          width="70px"
+        />
+      </a>
 
-			</div>
-		</div>
-	</section>
+      <div class="owl-carousel owl-theme" style="display: none;">
+        <div class="item">
+          <img src="{{site.baseurl}}/img/home/home-slider.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="{{site.baseurl}}/img/home/home-slider.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="{{site.baseurl}}/img/home/home-slider.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-	
+  <section
+    class="sec-about section fp-noscroll"
+    id="section-about"
+    data-anchor="about"
+  >
+    <div class="inner-wrapper">
+      <img
+        src="{{site.baseurl}}/img/about/misc-about.svg"
+        class="item-misc"
+        alt=""
+        width="150px"
+      />
+      <img
+        src="{{site.baseurl}}/img/about/logo-fedescharger.svg"
+        class="item-title"
+        data-aos="fade-up-left"
+        data-aos-anchor-placement="bottom-bottom"
+        alt=""
+      />
+      <img
+        src="{{site.baseurl}}/img/about/about-profile.jpg"
+        class="item-image"
+        width="250px"
+        alt=""
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+      />
+      <p
+        class="item-quote"
+        data-aos="fade-up-right"
+        data-aos-anchor-placement="bottom-bottom"
+      >
+        <img
+          src="{{site.baseurl}}/img/about/misc-line-red.svg"
+          class="item-misc-red"
+          alt=""
+          width="25px"
+        />
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh.
+      </p>
 
-	<section class="sec-about section fp-noscroll" id="section-about" data-anchor="about">
-		<div class="inner-wrapper">
-			<img src="{{site.baseurl}}/img/about/misc-about.svg" class="item-misc" alt="" width="150px">
-			<img src="{{site.baseurl}}/img/about/logo-fedescharger.svg" class="item-title" alt="">
-			<img src="{{site.baseurl}}/img/about/about-profile.jpg" class="item-image" width="250px" alt="">
-			<p class="item-quote">
-				<img src="{{site.baseurl}}/img/about/misc-line-red.svg" class="item-misc-red" alt="" width="25px">
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-			</p>
-			
-			<img src="{{site.baseurl}}/img/home/circle.svg" alt="" class="svg-circle"  width="300px">
-		</div>
-	</section>
+      <img
+        src="{{site.baseurl}}/img/home/circle.svg"
+        alt=""
+        class="svg-circle"
+        width="300px"
+      />
+    </div>
+  </section>
 
-	<section class="sec-alojamiento section fp-noscroll" id="section-media" data-anchor="media">
-		<div class="inner-wrapper" style="position: relative;z-index: 1">
-			<h2 style="text-align: center;">MEDIA</h2>
-			<div class="rooms photo-album">
-				<div class="room-item">
-					<a data-fancybox="gallery" href="{{site.baseurl}}/img/home/home-slider.jpg">
-						<img src="{{site.baseurl}}/img/home/home-slider.jpg">
-					</a>
-				</div>
-				<div class="room-item">
-					<a data-fancybox="gallery" href="{{site.baseurl}}/img/home/home-slider.jpg">
-						<img src="{{site.baseurl}}/img/home/home-slider.jpg">
-					</a>
-				</div>
-				<div class="room-item">
-					<a data-fancybox="gallery" href="{{site.baseurl}}/img/home/home-slider.jpg">
-						<img src="{{site.baseurl}}/img/home/home-slider.jpg">
-					</a>
-				</div>
-				<div class="room-item">
-					<a data-fancybox="gallery" href="{{site.baseurl}}/img/home/home-slider.jpg">
-						<img src="{{site.baseurl}}/img/home/home-slider.jpg">
-					</a>
-				</div>
-				<div class="room-item">
-					<a data-fancybox="gallery" href="{{site.baseurl}}/img/home/home-slider.jpg">
-						<img src="{{site.baseurl}}/img/home/home-slider.jpg">
-					</a>
-				</div>
-				<div class="room-item">
-					<a data-fancybox="gallery" href="{{site.baseurl}}/img/contact/back-contact.jpg">
-						<img src="{{site.baseurl}}/img/contact/back-contact.jpg">
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section
+    class="sec-alojamiento section fp-noscroll"
+    id="section-media"
+    data-anchor="media"
+  >
+    <div class="inner-wrapper" style="position: relative;z-index: 1">
+      <h2 style="text-align: center;">MEDIA</h2>
+      <div class="rooms photo-album">
+        <div
+          class="room-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
+          <a
+            data-fancybox="gallery"
+            href="{{site.baseurl}}/img/home/home-slider.jpg"
+          >
+            <img src="{{site.baseurl}}/img/home/home-slider.jpg" />
+          </a>
+        </div>
+        <div
+          class="room-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
+          <a
+            data-fancybox="gallery"
+            href="{{site.baseurl}}/img/home/home-slider.jpg"
+          >
+            <img src="{{site.baseurl}}/img/home/home-slider.jpg" />
+          </a>
+        </div>
+        <div
+          class="room-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
+          <a
+            data-fancybox="gallery"
+            href="{{site.baseurl}}/img/home/home-slider.jpg"
+          >
+            <img src="{{site.baseurl}}/img/home/home-slider.jpg" />
+          </a>
+        </div>
+        <div
+          class="room-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
+          <a
+            data-fancybox="gallery"
+            href="{{site.baseurl}}/img/home/home-slider.jpg"
+          >
+            <img src="{{site.baseurl}}/img/home/home-slider.jpg" />
+          </a>
+        </div>
+        <div
+          class="room-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
+          <a
+            data-fancybox="gallery"
+            href="{{site.baseurl}}/img/home/home-slider.jpg"
+          >
+            <img src="{{site.baseurl}}/img/home/home-slider.jpg" />
+          </a>
+        </div>
+        <div
+          class="room-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
+          <a
+            data-fancybox="gallery"
+            href="{{site.baseurl}}/img/contact/back-contact.jpg"
+          >
+            <img src="{{site.baseurl}}/img/contact/back-contact.jpg" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<section class=" sec-contacto section fp-noscroll" id="section-contact" data-anchor="contact" >
-		<div class="inner-wrapper" >
-			<div class="metadata">
-				<p>For Booking and press information</p>
-				<p>Please contact us</p>
-				<br>
-				<br>
-				<br>
-				<p>Email</p>
-				<p>info@fedeschrager.com</p>
-						<p>Phone</p>
-				<p>(+54911) 5995 6109</p>
-				<br>
-				<br>
+  <section
+    class=" sec-contacto section fp-noscroll"
+    id="section-contact"
+    data-anchor="contact"
+  >
+    <div class="inner-wrapper">
+      <div
+        class="metadata"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-center"
+      >
+        <p>For Booking and press information</p>
+        <p>Please contact us</p>
+        <br />
+        <br />
+        <br />
+        <p>Email</p>
+        <p>info@fedeschrager.com</p>
+        <p>Phone</p>
+        <p>(+54911) 5995 6109</p>
+        <br />
+        <br />
 
-
-				<div class="social-container">
-					<a href="https://www.facebook.com/Dj-Fede-Schrager-159595417568186/" class="item" target="_blank">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-					</a>
-					<a href="https://www.instagram.com/fedeschrager/" class="item" target="_blank">
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-					</a>
-				</div>
-			</div>
-			<div class="form">
-				Formulario
-			</div>
-	</section>
+        <div
+          class="social-container"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
+          <a
+            href="https://www.facebook.com/Dj-Fede-Schrager-159595417568186/"
+            class="item"
+            target="_blank"
+          >
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/fedeschrager/"
+            class="item"
+            target="_blank"
+          >
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div class="form">
+        Formulario
+      </div>
+    </div>
+  </section>
 </div>
 
-
-
-
 <script type="text/javascript">
-    jQuery(document).ready(function($) {
-      $('#fullpage').fullpage({
-        verticalCentered: true,
-        css3:true,
-        fitToSection: false,
-        scrollingSpeed: 1300,
-        autoScrolling: false,
-        dragAndMove: false,
-        navigation: false,
-        continuousVertical: false,
-        bigSectionsDestination: 'top',
-        normalScrollElementTouchThreshold: 5,
-        normalScrollElements: '#el-alojamiento, #lago-puelo',
-        menu: '#menu-superior',
-        anchors:['inicio', 'about', 'media', 'contact'],
-        slidesNavPosition: 'bottom',
-        parallax: false,
-        responsiveWidth: 500,
-        lazyLoading: true,
-        scrollBar: false,
-        scrollOverflow: true,
-      });
+  jQuery(document).ready(function($) {
+    $("#fullpage").fullpage({
+      verticalCentered: true,
+      css3: true,
+      fitToSection: false,
+      scrollingSpeed: 1300,
+      autoScrolling: false,
+      dragAndMove: false,
+      navigation: false,
+      continuousVertical: false,
+      bigSectionsDestination: "top",
+      normalScrollElementTouchThreshold: 5,
+      normalScrollElements: "#el-alojamiento, #lago-puelo",
+      menu: "#menu-superior",
+      anchors: ["inicio", "about", "media", "contact"],
+      slidesNavPosition: "bottom",
+      parallax: false,
+      responsiveWidth: 500,
+      lazyLoading: true,
+      scrollBar: false,
+      scrollOverflow: true
     });
+  });
 </script>
