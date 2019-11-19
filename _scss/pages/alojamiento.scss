@@ -86,3 +86,130 @@
     }
   }
 }
+
+#section-media {
+  .inner-wrapper {
+    max-width: 1500px;
+    position: relative;
+  }
+  .item-cipriani {
+    position: absolute;
+    left: 2vw;
+    top: 5vh;
+    z-index: 2;
+  }
+
+  .item-profile {
+    position: absolute;
+    left: 2vw;
+    top: 5vh;
+    z-index: 1;
+  }
+
+  .item-club {
+    position: absolute;
+    right: 10vw;
+    bottom: 10vh;
+    z-index: 2;
+  }
+
+  .item-creamfileds {
+    position: absolute;
+    right: 2vw;
+    top: 5vh;
+    z-index: 2;
+  }
+
+  .item-new-york {
+    position: absolute;
+    left: 2vw;
+    top: 25vh;
+    z-index: 2;
+  }
+
+  .item-profile-ny {
+    position: absolute;
+    right: 2vw;
+    top: 5vh;
+    z-index: 1;
+  }
+
+  .item-central-park {
+    position: absolute;
+    left: 20vw;
+    bottom: 20vh;
+    z-index: 2;
+  }
+
+  .item-arena-londres {
+    position: absolute;
+    left: 2vw;
+    bottom: 5vh;
+    z-index: 2;
+  }
+
+  .item-quote-new-york {
+    position: absolute;
+    left: 25vw;
+    top: 35vh;
+    z-index: 2;
+    max-width: 520px;
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+
+  .item-quote {
+    position: absolute;
+    left: 35vw;
+    top: 15vh;
+    z-index: 2;
+    max-width: 220px;
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+
+    @include media($mobile) {
+    }
+
+    .item-misc-blue {
+      position: absolute;
+      left: 0;
+      top: -40px;
+      z-index: 1;
+    }
+  }
+}
+
+.fuerza-bruta {
+  background: #f25430;
+
+  .item-profile-fuerza-bruta {
+    position: absolute;
+    left: 2vw;
+    top: 15vh;
+    z-index: 1;
+  }
+
+  .svg-circle {
+  }
+
+  .item-fuerza-bruta {
+    position: absolute;
+    right: 2vw;
+    bottom: 10vh;
+    z-index: 2;
+  }
+
+  .item-quote-fuerza-bruta {
+    position: absolute;
+    left: 2vw;
+    color: #dddddd;
+    top: initial;
+    bottom: 20vh;
+    z-index: 2;
+    font-family: $mono-font;
+  }
+}
