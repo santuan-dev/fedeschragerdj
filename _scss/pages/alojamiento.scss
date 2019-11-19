@@ -8,14 +8,6 @@
     padding-top: 150px;
     //padding-left: 150px;
     padding-bottom: 300px;
-
-    p {
-      font-size: 19px;
-      max-width: 600px;
-      margin: 15px auto;
-      font-size: 21px;
-      line-height: 30px;
-    }
   }
 
   .background-image {
@@ -137,7 +129,7 @@
   .item-central-park {
     position: absolute;
     left: 20vw;
-    bottom: 20vh;
+    top: 20vh;
     z-index: 2;
   }
 
@@ -210,6 +202,39 @@
     top: initial;
     bottom: 20vh;
     z-index: 2;
+    font-family: $mono-font;
+  }
+}
+
+.fiesta-marcas {
+  .item-profile-marcas {
+    position: absolute;
+    right: 2vw;
+    top: 15vh;
+    z-index: 1;
+  }
+
+  .svg-circle {
+  }
+
+  .item-fiestas-marcas {
+    position: absolute;
+    left: 2vw;
+    bottom: 10vh;
+    z-index: 2;
+  }
+
+  .item-quote-fiesta-marcas {
+    position: absolute;
+    left: 2vw;
+    color: #dddddd;
+    top: initial;
+    bottom: 0vh;
+    z-index: 2;
+    font-size: 0.75rem;
+    max-width: 450px;
+    line-height: 1.5rem;
+    font-weight: 300;
     font-family: $mono-font;
   }
 }
