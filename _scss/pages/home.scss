@@ -3,6 +3,9 @@
   left: 30vw;
   top: 30vh;
   z-index: 2;
+  &:hover {
+    transform: scale(1.05) !important;
+  }
 }
 
 .item-title {
@@ -10,13 +13,19 @@
   left: 10vw;
   top: 25vh;
   z-index: 2;
+  &:hover {
+    transform: scale(1.05) !important;
+  }
 }
 
 .item-quote {
   position: absolute;
-  right: 5vw;
-  bottom: 5vh;
+  right: 15vw;
+  bottom: 15vh;
   z-index: 2;
+  &:hover {
+    transform: scale(1.05) !important;
+  }
 }
 
 .svg-circle {
@@ -24,6 +33,9 @@
   right: 15vw;
   top: 1vh;
   z-index: 1;
+  &:hover {
+    transform: scale(0.95) !important;
+  }
 }
 
 .down-arrow {
@@ -32,9 +44,8 @@
   width: 70px;
   bottom: 2vh;
   z-index: 2;
-  transition: all 1s;
   &:hover {
-    transform: scale(0.8);
+    transform: scale(0.8) !important;
   }
 }
 /*
