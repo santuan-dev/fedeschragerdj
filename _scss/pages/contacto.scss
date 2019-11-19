@@ -11,6 +11,103 @@
     .metadata {
       flex: 1;
     }
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      .footer-logo {
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+      }
+      input {
+        font-size: 18px;
+      }
+      form {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .item {
+        padding: 1rem;
+        flex: 1 1 50%;
+      }
+    }
+
+    fieldset {
+      border: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    textarea {
+      background: none;
+      border: 0 none;
+      border-bottom: 2px solid #fff;
+      width: 100%;
+      resize: vertical;
+      max-height: 400px;
+      margin-bottom: 15px;
+      color: #fff;
+
+      font-family: $mono-font;
+      font-size: 18px;
+
+      &:hover {
+        border-bottom: 2px solid #f25430 !important;
+      }
+      &:focus {
+        border-bottom: 2px solid #f25430 !important;
+      }
+    }
+    label {
+      font-family: $mono-font;
+      font-size: 18px;
+    }
+    input::placeholder {
+      color: #fff;
+    }
+    input:focus::placeholder {
+      color: #f25430;
+    }
+    input {
+      background: none;
+
+      border: 0 none;
+      width: 100%;
+      color: #fff;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #fff;
+      font-family: $mono-font;
+      font-size: 18px;
+
+      &:focus {
+        border-bottom: 2px solid #f25430 !important;
+        color: #f25430;
+      }
+      &:hover {
+        border-bottom: 2px solid #f25430 !important;
+        color: #f25430;
+      }
+    }
+  }
+
+  .send-btn {
+    border: 2px solid #fff;
+    min-width: 150px;
+    padding: 0.75rem 2rem;
+    text-align: center;
+    margin: 15px;
+    transition: all 0.5s;
+    font-family: $mono-font !important;
+    cursor: pointer;
+
+    &:hover {
+      background: #fff;
+      color: #333 !important;
+    }
   }
 
   h4 {

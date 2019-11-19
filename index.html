@@ -16,7 +16,7 @@ layout: default
         width="400px"
         data-aos="fade-up-left"
         data-aos-duration="1500"
-        data-aos-anchor-placement="top-bottom"
+        data-aos-anchor-placement="bottom-bottom"
       />
       <img
         src="{{site.baseurl}}/img/home/quote.svg"
@@ -24,7 +24,7 @@ layout: default
         class="item-title"
         data-aos="fade-up-right"
         data-aos-duration="1500"
-        data-aos-anchor-placement="top-bottom"
+        data-aos-anchor-placement="bottom-bottom"
         width="400px"
       />
       <img
@@ -33,7 +33,7 @@ layout: default
         class="item-quote"
         data-aos="fade-up-left"
         data-aos-duration="1500"
-        data-aos-anchor-placement="top-bottom"
+        data-aos-anchor-placement="bottom-bottom"
         width="200px"
       />
       <img
@@ -50,7 +50,7 @@ layout: default
           alt=""
           data-aos="fade-up"
           data-aos-duration="1500"
-          data-aos-anchor-placement="top-bottom"
+          data-aos-anchor-placement="bottom-bottom"
           class=""
           width="70px"
         />
@@ -85,7 +85,7 @@ layout: default
       <img
         src="{{site.baseurl}}/img/about/logo-fedescharger.svg"
         class="item-title"
-        data-aos="fade-up-left"
+        data-aos="fade-up-right"
         data-aos-duration="1500"
         data-aos-anchor-placement="bottom-bottom"
         alt=""
@@ -93,9 +93,9 @@ layout: default
       <img
         src="{{site.baseurl}}/img/about/about-profile.jpg"
         class="item-image"
-        width="250px"
+        width="350px"
         alt=""
-        data-aos="fade-up-right"
+        data-aos="fade-up-left"
         data-aos-duration="1500"
         data-aos-anchor-placement="bottom-bottom"
       />
@@ -136,7 +136,7 @@ layout: default
           class="room-item"
           data-aos="fade-left"
           data-aos-duration="1500"
-          data-aos-anchor-placement="center-center"
+          data-aos-anchor-placement="bottom-bottom"
         >
           <a
             data-fancybox="gallery"
@@ -149,7 +149,7 @@ layout: default
           class="room-item"
           data-aos="fade-down"
           data-aos-duration="1500"
-          data-aos-anchor-placement="center-center"
+          data-aos-anchor-placement="bottom-bottom"
         >
           <a
             data-fancybox="gallery"
@@ -162,7 +162,7 @@ layout: default
           class="room-item"
           data-aos="fade-right"
           data-aos-duration="1500"
-          data-aos-anchor-placement="center-center"
+          data-aos-anchor-placement="bottom-bottom"
         >
           <a
             data-fancybox="gallery"
@@ -175,7 +175,7 @@ layout: default
           class="room-item"
           data-aos="fade-left"
           data-aos-duration="1500"
-          data-aos-anchor-placement="center-center"
+          data-aos-anchor-placement="bottom-bottom"
         >
           <a
             data-fancybox="gallery"
@@ -188,7 +188,7 @@ layout: default
           class="room-item"
           data-aos="fade-up"
           data-aos-duration="1500"
-          data-aos-anchor-placement="center-center"
+          data-aos-anchor-placement="bottom-bottom"
         >
           <a
             data-fancybox="gallery"
@@ -201,7 +201,7 @@ layout: default
           class="room-item"
           data-aos="fade-right"
           data-aos-duration="1500"
-          data-aos-anchor-placement="center-center"
+          data-aos-anchor-placement="bottom-bottom"
         >
           <a
             data-fancybox="gallery"
@@ -251,7 +251,30 @@ layout: default
         </div>
       </div>
       <div class="form">
-        Formulario
+        <form action="">
+          <div class="item">
+            <input type="text" placeholder="First Name*" />
+          </div>
+          <div class="item"><input type="text" placeholder="Last Name*" /></div>
+          <div class="item"><input type="email" placeholder="Email*" /></div>
+          <div class="item"><input type="url" placeholder="Website" /></div>
+          <div class="item"><input type="tel" placeholder="Phone" /></div>
+          <div class="item" style="width: 100%; flex: 1 1 100%">
+            <fieldset>
+              <label for="message">Message*</label>
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+          </div>
+          <a class="send-btn">
+            Send
+          </a>
+        </form>
+        <img
+          src="{{ site.baseurl }}/img/logo-fedescharger.svg"
+          width="240px"
+          class="footer-logo"
+          height="34px"
+        />
       </div>
     </div>
   </section>
