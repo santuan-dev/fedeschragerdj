@@ -183,3 +183,29 @@ $mobile: new-breakpoint(max-width 800px 4);
     }
   }
 }
+
+
+body.fp-viewing-performance,
+body.fp-viewing-media,
+body.fp-viewing-creamfields,
+body.fp-viewing-new-york,
+body.fp-viewing-fuerza,
+body.fp-viewing-fiestas,
+body.fp-viewing-la-caracola,
+body.fp-viewing-galeria,
+body.fp-viewing-performance,
+body.fp-viewing-news,
+body.fp-viewing-turbosonora,
+body.fp-viewing-metrodance,
+body.fp-viewing-winter-session,
+body.fp-viewing-feria-gastronomica,
+body.fp-viewing-musicon,
+body.fp-viewing-por-amor,
+body.fp-viewing-cubras {
+	.menu__item_media {
+		a:after {
+		  width: 100%;
+		  background-color: #fff;
+		}
+	}
+}

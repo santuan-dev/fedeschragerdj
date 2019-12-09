@@ -12,7 +12,7 @@
       type="text/javascript"
       src="{{ site.baseurl }}/js/jquery.min.js"
     ></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -54,13 +54,21 @@
       src="{{site.baseurl}}/js/jquery.fullPage.min.js"
     ></script>
     <link rel="stylesheet" href="{{site.baseurl}}/style.css" />
-    <script
-      src="//instant.page/1.2.1"
-      type="module"
-      integrity="sha384-/IkE5iZAM/RxPto8B0nvKlMzIyCWtYocF01PbGGp1qElJuxv9J4whdWBRtzZltWn"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
-  <body>
-</html>
+  <body data-scrollbar>
+    <div class="KW_progressContainer">
+      <div class="KW_progressBar"></div>
+    </div>
+
+    <script>
+    	$(window).load(function(){
+		  $(window).scroll(function() {
+    		var wintop = $(window).scrollTop(), docheight = $('#fullPage').height(), winheight = $(window).height();
+    var totalScroll = (wintop/(docheight-winheight))*100;
+    $(".KW_progressBar").css("height",totalScroll+"%");
+  });
+
+});
+    </script>

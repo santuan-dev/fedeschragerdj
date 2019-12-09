@@ -26,7 +26,7 @@
   z-index: 1;
   transition: all 0.8s;
   &:hover {
-    transform: scale(0.8) !important;
+    //*transform: scale(0.8) !important;
   }
 }
 
@@ -50,6 +50,7 @@ section {
   //min-height: 100vh;
   padding: 0 0;
   color: #fff;
+      background: #141414;
 
   .inner-wrapper {
     margin: 0 auto;
@@ -95,7 +96,7 @@ section {
 
   .inner-wrapper {
     padding: 0;
-    overflow: hidden;
+    //overflow: hidden;
     max-width: 1390px;
     position: relative;
     height: 100vh;
@@ -222,4 +223,33 @@ section {
   .social {
     padding: 3px 0;
   }
+}
+
+section.section {
+	.ani-item {
+		transform: scale(.8) translateY(0);
+		opacity: 0;
+		transition: transform 1.5s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 1s ease-in-out;
+	}
+
+	.delay-2 {
+		transition-delay: .4s;
+	}
+	.delay-1 {
+		transition-delay: 0.2s;
+	}
+	.delay-4 {
+		transition-delay: .8s;
+	}
+	.delay-3 {
+		transition-delay: .6s;
+	}
+
+	&.active {
+		.ani-item {
+			transform: scale(1) translateY(0);
+				opacity: 1;
+		}
+
+	}
 }

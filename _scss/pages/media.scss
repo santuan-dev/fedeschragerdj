@@ -1,0 +1,685 @@
+section {
+	.inner-wrapper {
+		height: 100vh;
+		position: relative;
+	}
+}
+
+.sec-media {
+	.item-quote {
+		left: 5vw;
+	    top: 25vh;
+	    bottom: initial;
+	}
+	.item-title {
+		left: 5vw;
+	    right: initial;
+	    bottom: 5vh;
+	    top: initial;
+		
+		img {
+			width: 50vw;
+		}
+	}
+	.svg-circle {
+		right: 40vw;
+		top: 15vh;
+	}
+	.item-image {
+		left: initial;
+		right: 5vw;
+		bottom: 5vh;
+		top: initial;
+		
+		img {
+			width: 25vw;
+		}
+	}
+	.item-image-quote {
+		margin-top: 2vh;
+	}
+}
+
+
+
+.sec-creamfields {
+	.item-quote {
+		right: 25vw;
+		left: initial;
+	    top: 30vh;
+	    bottom: initial;
+	    z-index: 9;
+	    line-height: 25px;
+	}
+	.item-title {
+		left: 5vw;
+	    right: initial;
+	    top: 15vh;
+	    bottom: initial;
+	    z-index: 9;
+		
+		img {
+			width: 20vw;
+		}
+	}
+	.item-title-2 {
+		position: absolute;
+		left: 25vw;
+	    right: initial;
+	    bottom: 5vh;
+	    top: initial;
+	    z-index: 99;
+		
+		img {
+			width: 30vw;
+		}
+	}
+	.item-title-3 {
+		position: absolute;
+		right: 0;
+		left: initial;
+		bottom: 5vh;
+		top: 15vh;
+		
+		img {
+			height: 100%;
+		}
+	}
+	.svg-circle {
+		right: 40vw;
+		top: 15vh;
+		width: 50vh;
+	}
+	.item-image {
+		left: 5vw;
+		right: initial;
+		top: 30vh;
+		bottom: initial;
+		
+		img {
+			width: 40vw;
+		}
+	}
+	
+}
+
+
+
+
+.sec-new-york {
+	.item-quote {
+		left: 25vw;
+		right: initial;
+	    top: 30vh;
+	    z-index: 99;
+	    line-height: 25px;
+	}
+	.item-title {
+		left: 35vw;
+	    right: initial;
+	    top: 55vh;
+	    bottom: initial;
+	    z-index: 9;
+		
+		img {
+			width: 20vw;
+		}
+	}
+	.item-title-2 {
+		position: absolute;
+		left: 5vw;
+	    right: initial;
+	    bottom: 10vh;
+	    top: initial;
+		
+		img {
+			width: 30vw;
+		}
+	}
+	.item-title-3 {
+		position: absolute;
+		left: 5vw;
+		right: initial;
+		bottom: initial;
+		top: 15vh;
+		z-index: 99;
+		
+		img {
+			width: 50vw;
+		}
+	}
+	.svg-circle {
+		right: 40vw;
+		top: 15vh;
+		width: 50vh;
+	}
+	.item-image {
+		right: 5vw;
+		left: initial;
+		bottom: 10vh;
+		top: initial;
+		
+		img {
+			width: 20vw;
+		}
+	}
+}
+
+
+.sec-fuerza-bruta {
+	background: #f25430;
+	.item-quote {
+		right: 5vw;
+	    top: 55vh;
+	    left: initial;
+	    bottom: initial;
+	    text-align: right;
+	}
+	.item-title {
+		right: 5vw;
+	    left: initial;
+	    bottom: 5vh;
+	    top: initial;
+	    z-index: 9;
+		
+		img {
+			width: 50vw;
+		}
+	}
+	.svg-circle {
+		right: 5vw;
+		top: 15vh;
+		left: initial;
+		bottom: initial;
+	}
+	.item-image {
+		right: initial;
+		left: 5vw;
+		bottom: initial;
+		top: 15vh;
+		
+		img {
+			width: 50vw;
+		}
+	}
+	.item-image-quote {
+		margin-top: 2vh;
+	}
+}
+
+.sec-fiestas {
+	.party-container {
+		position: absolute;
+		right: 5vw;
+		top: 20vh;
+		width: 35vw;
+	}
+	.item-quote {
+		position: relative;
+		right: 0;
+	    top: 15px;
+	    left: initial;
+	    bottom: initial;
+	    text-align: right;
+	    
+	    
+	    img {
+	    	width: 100%;
+	    }
+	}
+	.item-title {
+		position: relative;
+		right: 0;
+	    left: initial;
+	    bottom: initial;
+	    top: initial;
+	    z-index: 9;
+		
+		img {
+			width: 100%;
+		}
+	}
+	.item-title-2 {
+		position: relative;
+		right: 0;
+	    left: initial;
+	    bottom: initial;
+	    top: initial;
+	    z-index: 9;
+		
+		img {
+			margin-top: 15px;
+			width: 100%;
+		}
+	}
+	.svg-circle {
+		right: 0;
+		top: 15vh;
+		left: initial;
+		bottom: initial;
+	}
+	.item-image {
+		right: initial;
+		left: 5vw;
+		bottom: initial;
+		top: 15vh;
+		
+		img {
+			width: 50vw;
+		}
+	}
+
+}
+
+
+
+.sec-la-caracola {
+	.item-title {
+		left: 15vw;
+	    right: initial;
+	    bottom: 10vh;
+	    top: 15vh;
+	    width: 30vw;
+		
+		img {
+			height: 100%;
+		}
+	}
+	.svg-circle {
+		right: 40vw;
+		top: 15vh;
+	}
+	.item-image {
+		left: initial;
+		right: 5vw;
+		bottom: 5vh;
+		top: 15vh;
+		width: 30vw;
+		
+		img {
+			height: 100%;
+		}
+	}
+	.item-image-quote {
+		margin-top: 1vh;
+		font-size: .6rem;
+		text-align: center;
+		max-width: 360px;
+		position: relative;
+		left: -5px;
+	}
+}
+
+
+.sec-performance {
+	.performance {
+		position: absolute;
+		    top: 35vh;
+		    left: 2vw;
+		    z-index: 99;
+	}
+	.item-quote {
+		position: relative;
+		left: 0;
+		top: 0;
+		bottom: initial;
+	    
+	    img {
+	    	width: 100%;
+	    }
+	}
+	.item-title {
+		position: relative;
+		    left: 0;
+		    right: initial;
+		    bottom: initial;
+		    top: 15px;
+		
+		img {
+			width: 100%;
+		}
+	}
+	.svg-circle {
+		left: 30vw;
+		top: 25vh;
+	}
+	.item-image {
+		left: initial;
+		right: 0;
+		bottom: 5vh;
+		top: 15vh;
+		
+		img {
+			height: 100%;
+		}
+	}
+
+}
+
+
+.sec-turbosonora {
+	.item-title {
+		left: 15vw;
+	    right: initial;
+	    bottom: initial;
+	    top: 35vh;
+	    width: 30vw;
+		
+		img {
+			width: 100%;
+		}
+	}
+	.svg-circle {
+		right: 15vh;
+		top: 23vh;
+	}
+	.item-image {
+		left: initial;
+		right: 20vw;
+		bottom: initial;
+		top: 35vh;
+		width: 30vw;
+		
+		img {
+			width: 100%;
+		}
+	}
+	.item-quote {
+		top: 20vh;
+		bottom: initial;
+		left: 50vw;
+		font-size: 12px;
+		line-height: 22px;
+	}
+}
+
+.sec-metrodance {
+	.item-title {
+		left: initial;
+	    right: 10vh;
+	    bottom: initial;
+	    top: 45vh;
+	    width: 70vw;
+		
+		img {
+			width: 100%;
+		}
+	}
+	.item-title-2 {
+		left: 5vw;
+		bottom: initial;
+		top: 22vh;
+		z-index: 9;
+		width: 20px;
+		position: absolute;
+		
+		img {
+			width: 100%;
+		}
+	}
+
+	.item-image {
+		left: 0;
+	    right: initial;
+	    bottom: initial;
+	    top: 25vh;
+	    width: 40vw;
+		
+		img {
+			width: 100%;
+		}
+	}
+	.item-quote {
+		position: absolute;
+	    right: 15vw;
+	    top: 25vh;
+	    z-index: 2;
+	    text-align: left;
+	    bottom: initial;
+	    width: 210px;
+	}
+	.item-image-quote {
+		position: absolute;
+		right: 15vw;
+		bottom: 15vh;
+		z-index: 2;
+	}
+}
+
+.sec-winter-session {
+	.item-title {
+		left: initial;
+		right: 70vh;
+		bottom: initial;
+		top: 15vh;
+		width: 25vw;
+		
+		img {
+			width: 100%;
+		}
+	}
+	.item-title-2 {
+		right: 5vw;
+		top: initial;
+		bottom: 5vh;
+		z-index: 9;
+		position: absolute;
+		width: 45vw;
+		
+		img {
+			width: 100%;
+		}
+	}
+
+	.item-image {
+		left: initial;
+		right: 12vw;
+		bottom: initial;
+		top: 25vh;
+		width: 40vw;
+		
+		img {
+			width: 100%;
+		}
+	}
+	.item-quote {
+		position: absolute;
+		right: initial;
+		top: initial;
+		z-index: 2;
+		text-align: left;
+		bottom: 15vh;
+		left: 5vw;
+	}
+	.svg-circle {
+	    left: 22vw;
+	    top: 25vh;
+
+	}
+}
+
+.sec-feria-gastronomica {
+	.item-title {
+		position: absolute;
+		left: 5vw;
+		top: 40vh;
+		z-index: 2;
+		
+		img {
+			width: 70%;
+		}
+	}
+
+.item-image-quote {
+	position: absolute;
+    bottom: 5vh;
+    left: 5vw;
+    font-size: 14px;
+}
+	.item-image {
+		position: absolute;
+		right: 0;
+		top: 30vh;
+		z-index: 2;
+		left: initial;
+		img {
+			width: 100%;
+		}
+	}
+
+	.svg-circle {
+	    right: initial;
+	    left: 25vw;
+	    top: 25vh;
+
+	}
+}
+
+
+.sec-musicon {
+	.item-title {
+		position: absolute;
+		right: 20vw;
+		bottom: 20vh;
+		z-index: 2;
+		left: initial;
+		top: initial;
+		width: 40vw;
+		
+		img {
+			width: 100%;
+		}
+	}
+
+	.item-image {
+		position: absolute;
+		right: initial;
+		top: 20vh;
+		z-index: 2;
+		left: 15vw;
+		width: 80vh;
+		img {
+			width: 100%;
+		}
+	}
+
+	.svg-circle {
+		right: 15vw;
+	    top: 20vh;
+	}
+
+	.item-image-quote {
+		position: relative;
+	    font-size: 11px;
+	    top: 15px;
+	}
+}
+
+
+.sec-por-amor {
+	.item-title {
+		position: absolute;
+		    right: initial;
+		    bottom: initial;
+		    z-index: 2;
+		    left: 26vw;
+		    top: 45vh;
+		    width: 30vw;
+		
+		img {
+			width: 100%;
+		}
+	}
+	.item-title-2 {
+		position: absolute;
+		right: initial;
+		top: 20vh;
+		z-index: 2;
+		left: 5vw;
+		bottom: initial;
+		width: 45vw;
+		
+		img {
+			width: 100%;
+		}
+	}
+
+	.item-image {
+		position: absolute;
+		right: 15vw;
+		bottom: 10vh;
+		z-index: 2;
+		left: initial;
+		width: 70vh;
+		top: initial;
+		img {
+			width: 100%;
+		}
+	}
+
+	.svg-circle {
+		left: 25vw;
+		top: 50vh;
+	}
+
+	.item-image-quote {
+		position: absolute;
+	    font-size: 11px;
+	    top: initial;
+	    bottom: 10vh;
+	    left: 25vw;
+	    text-align: right;
+	    line-height: 22px;
+	}
+}
+
+.sec-cubras {
+	
+
+	.item-image {
+		left: 15vh;
+		top: 15vh;
+		z-index: 2;
+		width: 40vw;
+		img {
+			width: 100%;
+		}
+	}
+	.item-image-quote {
+		right: 18vw;
+		    top: 51vh;
+		    z-index: 2;
+		    left: initial;
+		    position: absolute;
+	}
+	.item-quote {
+		left: initial;
+		top: 7px;
+		z-index: 2;
+		right: 7px;
+		position: relative;
+		text-align: right;
+	}
+	.item-title {
+		left: initial;
+		position: absolute;
+		top: 25vh;
+		z-index: 2;
+		right: 15vw;
+	}
+	
+	.item-misc {
+		    position: absolute;
+		    right: 50vh;
+		    bottom: 20vh;
+		    z-index: 11;
+		}
+
+	.item-title-2 {
+		left: 7vw;
+		    bottom: 5vh;
+		    z-index: 2;
+		    right: initial;
+		    position: absolute;
+	}
+}
