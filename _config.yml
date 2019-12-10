@@ -7,7 +7,6 @@
 
 # Site settings
 
-baseurl: /fedeschragerdj
 exclude: ["README.md", "Gemfile"]
 permalink: pretty
 

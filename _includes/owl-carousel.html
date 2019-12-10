@@ -2,22 +2,35 @@
     $('.owl-carousel').owlCarousel({
       autoplay:true,
       autoplayTimeout: 4000,
-      autoplayHoverPause:false,
+      autoplayHoverPause:true,
       center: true,
-      singleItem:true,
-      touchDrag: false,
-      navigation : false, // Show next and prev buttons
+      loop:true,
+      singleItem:false,
+      touchDrag: true,
+      navigation : true, // Show next and prev buttons
       navigationText: [
-      "<i class='fas fa-chevron-left'></i>",
-      "<i class='fas fa-chevron-right'></i>"
+	      "prev",
+	      "next"
       ],
-      items:1,
+      items:3,
       autoHeight: true,
-      animateIn: 'fadeIn',
-      animateOut: 'fadeOut',
+      animateIn: 'fadeInRight',
+      animateOut: 'fadeOutLeft',
       slideSpeed : 4000,
       paginationSpeed : 4000,
       rewind:true,
-      margin: 0,
+      margin: 50,
+      responsiveClass:true,
+         responsive:{
+             0:{
+                 items:1,
+                 nav:true
+             },
+             600:{
+                 items:3,
+                 nav:false
+             },
+
+         }
     })
   </script>

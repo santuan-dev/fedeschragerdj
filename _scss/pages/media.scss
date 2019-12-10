@@ -1,3 +1,5 @@
+$mobile: new-breakpoint(max-width 500px 4);
+
 section {
 	.inner-wrapper {
 		height: 100vh;
@@ -9,11 +11,69 @@ section {
 	}
 }
 
+.sec-intro {
+
+	.item-title{
+		@include media($mobile) {
+			width: 75vw;
+		}
+	}
+
+	.item-image{
+		@include media($mobile) {
+			top: 80px;
+		    right: initial;
+		    left: 10px;
+		    width: 89vw;
+		}
+	}
+
+	.item-quote {
+		@include media($mobile) {
+			right: 8px;
+			left: initial;
+			width: 39vw;
+			bottom: 18vh;
+		}
+	}
+}
+
+.sec-about {
+	.svg-circle {
+
+		@include media($mobile) {
+			z-index: 0;
+		}
+	}
+	.item-image {
+		@include media($mobile) {
+			width: 70vw;
+			left: 5vw;
+			top: 17vh;
+		}
+	}
+	.item-title {
+		@include media($mobile) {
+			width: 85vw;
+			left: 5vw;
+			top: 65vh;
+		}
+	}
+}
+
 .sec-media {
 	.item-quote {
 		left: 5vw;
 	    top: 25vh;
 	    bottom: initial;
+	    
+	    @include media($mobile) {
+	    	text-align: right;
+	    	left: initial;
+	    	right: 0;
+	    	top: 80px;
+
+	    }
 	}
 	.item-title {
 		left: 5vw;
@@ -21,27 +81,52 @@ section {
 	    bottom: 5vh;
 	    top: initial;
 	    width: 30vw;
+	    z-index: 99;
 		
 		img {
 			width: 100%;
+		}
+
+		@include media($mobile) {
+			width: 75vw;
+			bottom: 60px;
 		}
 	}
 	.svg-circle {
 		right: 40vw;
 		top: 15vh;
+		@include media($mobile) {
+			z-index: 0;
+		}
 	}
 	.item-image {
 		left: initial;
 		right: 5vw;
 		bottom: 5vh;
 		top: initial;
-		
+		@include media($mobile) {
+			right: 0vw;
+			text-align: right;
+			bottom: 15vh;
+			top: initial;
+			width: 100vw;
+		}
 		img {
 			width: 25vw;
+			@include media($mobile) {
+				width: 60vw;
+			}
 		}
 	}
 	.item-image-quote {
 		margin-top: 2vh;
+		@include media($mobile) {
+			width: 100%;
+			bottom: -50px;
+			text-align: left;
+			left: 46px;
+			position: absolute;
+		}
 	}
 }
 
@@ -55,6 +140,13 @@ section {
 	    bottom: initial;
 	    z-index: 9;
 	    line-height: 25px;
+	    
+        @include media($mobile) {
+			font-size: 10px;
+			text-align: right;
+			line-height: 16px;
+    	}
+
 	}
 	.item-title {
 		left: 5vw;
@@ -62,9 +154,16 @@ section {
 	    top: 15vh;
 	    bottom: initial;
 	    z-index: 9;
+	    
+	    @include media($mobile) {
+	    	width: 60vw;
+	    }
 		
 		img {
 			width: 20vw;
+			@include media($mobile) {
+				width: 100%;
+			}
 		}
 	}
 	.item-title-2 {
@@ -74,9 +173,17 @@ section {
 	    bottom: 5vh;
 	    top: initial;
 	    z-index: 99;
+	    
+	    @include media($mobile) {
+	    	left: 10px;
+		}
 		
 		img {
 			width: 30vw;
+			
+		    @include media($mobile) {
+		    	width: 70vw;
+			}
 		}
 	}
 	.item-title-3 {
@@ -85,9 +192,15 @@ section {
 		left: initial;
 		bottom: 5vh;
 		top: 15vh;
+		z-index: 9;
 		
 		img {
 			height: 100%;
+				    
+			@include media($mobile) {
+				height: auto;
+				width: 16vw;
+			}
 		}
 	}
 	.svg-circle {
@@ -103,6 +216,9 @@ section {
 		
 		img {
 			width: 40vw;
+			    @include media($mobile) {
+			    	width: 80vw;
+				}
 		}
 	}
 	
@@ -118,6 +234,15 @@ section {
 	    top: 30vh;
 	    z-index: 99;
 	    line-height: 25px;
+		@include media($mobile) {
+			text-align: right;
+			font-size: 11px;
+			line-height: 15px;
+			width: 100%;
+			left: 0;
+			bottom: 40px;
+			top: initial;
+		}
 	}
 	.item-title {
 		left: 35vw;
@@ -125,9 +250,17 @@ section {
 	    top: 55vh;
 	    bottom: initial;
 	    z-index: 9;
+	    
+	         @include media($mobile) {
+	         	top: 50px;
+	         	left: 26vw;
+	    			}
 		
 		img {
 			width: 20vw;
+			    @include media($mobile) {
+			    	width: 50vw;
+				}
 		}
 	}
 	.item-title-2 {
@@ -136,9 +269,19 @@ section {
 	    right: initial;
 	    bottom: 10vh;
 	    top: initial;
+     @include media($mobile) {
+		    	left: 0;
+		    	bottom: 19vh;
+		    	z-index: 99;
+			}
+
 		
 		img {
 			width: 30vw;
+			    @include media($mobile) {
+			    	width: 50vw;
+				}
+		   
 		}
 	}
 	.item-title-3 {
@@ -151,6 +294,10 @@ section {
 		
 		img {
 			width: 50vw;
+			
+		    @include media($mobile) {
+		    	width: 70vw;
+			}
 		}
 	}
 	.svg-circle {
@@ -163,9 +310,15 @@ section {
 		left: initial;
 		bottom: 10vh;
 		top: initial;
-		
+	    @include media($mobile) {
+	    	bottom: 30vh;
+		}
 		img {
 			width: 20vw;
+			
+		    @include media($mobile) {
+		    	width: 50vw;
+			}
 		}
 	}
 }
@@ -179,6 +332,10 @@ section {
 	    left: initial;
 	    bottom: initial;
 	    text-align: right;
+	    
+        @include media($mobile) {
+        	top: 66vh;
+    	}
 	}
 	.item-title {
 		right: 5vw;
@@ -186,9 +343,18 @@ section {
 	    bottom: 5vh;
 	    top: initial;
 	    z-index: 9;
+	    
+        @include media($mobile) {
+        	bottom: initial;
+        	top: 53vh;
+    	}
 		
 		img {
 			width: 50vw;
+			
+			    @include media($mobile) {
+			    	width: 75vw;
+				}
 		}
 	}
 	.svg-circle {
@@ -196,15 +362,26 @@ section {
 		top: 15vh;
 		left: initial;
 		bottom: initial;
+	    @include media($mobile) {
+	    	right: 0;
+		}
 	}
 	.item-image {
 		right: initial;
 		left: 5vw;
 		bottom: initial;
 		top: 15vh;
-		
+	    
+	    @include media($mobile) {
+	    	top: 25vh;
+		}
+
 		img {
 			width: 50vw;
+			
+		    @include media($mobile) {
+		    	width: 80vw;
+			}
 		}
 	}
 	.item-image-quote {
@@ -218,6 +395,10 @@ section {
 		right: 5vw;
 		top: 20vh;
 		width: 35vw;
+	    @include media($mobile) {
+	    	width: 83vw;
+	    	top: 60px;
+		}
 	}
 	.item-quote {
 		position: relative;
@@ -270,8 +451,18 @@ section {
 		bottom: initial;
 		top: 15vh;
 		
+		    @include media($mobile) {
+		    	top: initial;
+		    	bottom: 5vh;
+		    	left: 7px;
+			}
+		
 		img {
 			width: 50vw;
+			    @include media($mobile) {
+			width: 83vw;
+
+				}
 		}
 	}
 
@@ -281,12 +472,21 @@ section {
 
 .sec-la-caracola {
 	.item-title {
-		left: 10vw;
+		left: 7vw;
 	    right: initial;
 	    bottom: 10vh;
 	    top: 15vh;
 	    width: 30vw;
+		z-index: 3;
 		
+	    @include media($mobile) {
+	    	width: 100vw;
+	    	text-align: center;
+	    	left: 0;
+	    	right: 0;
+	    	top: 50px;
+	    	bottom: 75px;
+		}
 		img {
 			height: 100%;
 		}
@@ -297,10 +497,14 @@ section {
 	}
 	.item-image {
 		left: initial;
-		right: 10vw;
+		right: 7vw;
 		bottom: 5vh;
 		top: 15vh;
 		width: 30vw;
+		
+	    @include media($mobile) {
+	    	display: none;
+		}
 		
 		img {
 			height: 100%;
@@ -308,11 +512,16 @@ section {
 	}
 	.item-image-quote {
 		margin-top: 1vh;
-		font-size: .6rem;
+		font-size: .7rem;
 		text-align: center;
-		max-width: 360px;
+		max-width: 100%;
 		position: relative;
 		left: -5px;
+		padding-right: 65px;
+		    @include media($mobile) {
+padding: 0;
+left: 0;
+			}
 	}
 }
 
@@ -355,6 +564,82 @@ left: initial;
     bottom: 5vh;
     top: 15vh;
     text-align: right;
+		
+		img {
+			height: 100%;
+		}
+	}
+
+}
+
+
+
+.sec-gallery {
+	
+	.item-title {
+		position: relative;
+	    left: 30vw;
+	    right: initial;
+	    bottom: initial;
+	    top: -125px;
+	    width: 40vw;
+	    z-index: 1;
+		
+		img {
+			width: 100%;
+		}
+	}
+
+	.owl-nav.disabled {
+		position: absolute;
+		top: -80px;
+		left: 0;
+		right: 0;
+		display: block !important;
+	}
+	.owl-dots {display: none;}
+	.owl-prev,
+	.owl-next {
+		width: 88px;
+		height: 88px;
+		background-repeat: no-repeat !important;
+		position: relative;
+		transition: all 1s;
+		span {
+			opacity: 0;
+		}
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	.owl-prev {
+		background: url('/img/home/left-arrow.svg') !important;
+		left: -20vw;
+		top: -60px;
+	}
+	.owl-next {
+		background: url('/img/home/right-arrow.svg') !important;
+		right: -20vw;
+		top: -60px;
+		
+	}
+
+	.owl-carousel {
+		position: absolute;
+		top: 50vh;
+	}
+	.svg-circle {
+		left: 30vw;
+		top: 25vh;
+	}
+	.item-image {
+		left: initial;
+		right: 5vw;
+		bottom: 5vh;
+		top: 15vh;
+		text-align: right;
 		
 		img {
 			height: 100%;
@@ -688,5 +973,13 @@ left: initial;
 		    z-index: 2;
 		    right: initial;
 		    position: absolute;
+	}
+}
+
+.sec-contacto {
+	form {
+		    @include media($mobile) {
+		    	display: none !important;
+			}
 	}
 }

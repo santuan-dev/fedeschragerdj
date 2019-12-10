@@ -45,6 +45,7 @@ body {
     right: 10px;
     top: 8px;
     color: #fff !important;
+    font-size: 25px;
   }
 
   .sliding-panel-button-internal {
@@ -90,10 +91,17 @@ body {
     display: none !important;
   }
 
+	.top-bar {
+		padding: 0;
+	}
+
   .logo {
-    top: 10px;
+    top: 0;
+    left: -20px;
+    position: relative;
     img {
       width: 250px;
+      transform: scale(.8);
     }
   }
 }
