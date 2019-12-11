@@ -40,7 +40,7 @@ section {
 
 .sec-about {
 	.svg-circle {
-
+		z-index: 0;
 		@include media($mobile) {
 			z-index: 0;
 		}
@@ -335,6 +335,7 @@ section {
 	    
         @include media($mobile) {
         	top: 66vh;
+        	position: relative;
     	}
 	}
 	.item-title {
@@ -396,8 +397,11 @@ section {
 		top: 20vh;
 		width: 35vw;
 	    @include media($mobile) {
-	    	width: 83vw;
-	    	top: 60px;
+	    	top: 0;
+	    	right: 0;
+	    	left: 0;
+	    	width: 100%;
+	    	position: relative;
 		}
 	}
 	.item-quote {
@@ -453,14 +457,16 @@ section {
 		
 		    @include media($mobile) {
 		    	top: initial;
-		    	bottom: 5vh;
-		    	left: 7px;
+		    	    bottom: 5vh;
+		    	    left: 0;
+		    	    position: relative;
+		    	    top: 40px;
 			}
 		
 		img {
 			width: 50vw;
 			    @include media($mobile) {
-			width: 83vw;
+			width: 100%;
 
 				}
 		}
@@ -471,6 +477,9 @@ section {
 
 
 .sec-la-caracola {
+	  @include media($mobile) {
+	    	padding: 0;
+		}
 	.item-title {
 		left: 7vw;
 	    right: initial;
@@ -486,6 +495,7 @@ section {
 	    	right: 0;
 	    	top: 50px;
 	    	bottom: 75px;
+	    	transform: scale(.8)
 		}
 		img {
 			height: 100%;
@@ -518,10 +528,10 @@ section {
 		position: relative;
 		left: -5px;
 		padding-right: 65px;
-		    @include media($mobile) {
-padding: 0;
-left: 0;
-			}
+	    @include media($mobile) {
+			padding: 0 1em;
+			left: 0;
+		}
 	}
 }
 
@@ -529,9 +539,18 @@ left: 0;
 .sec-performance {
 	.performance {
 		position: absolute;
-		    top: 35vh;
-		    left: 2vw;
-		    z-index: 99;
+	    top: 35vh;
+	    left: 2vw;
+	    z-index: 99;
+        @include media($mobile) {
+        	background: #141414;
+        	padding: 25px 13px 35px;
+        	left: 0;
+        	width: 100%;
+        	bottom: 0;
+        	top: 15px;
+        	position: relative;
+    	}
 	}
 	.item-quote {
 		position: relative;
@@ -545,10 +564,10 @@ left: 0;
 	}
 	.item-title {
 		position: relative;
-		    left: 0;
-		    right: initial;
-		    bottom: initial;
-		    top: 15px;
+		left: 0;
+		right: initial;
+		bottom: initial;
+		top: 15px;
 		
 		img {
 			width: 100%;
@@ -559,14 +578,26 @@ left: 0;
 		top: 25vh;
 	}
 	.item-image {
-left: initial;
-    right: 5vw;
-    bottom: 5vh;
-    top: 15vh;
-    text-align: right;
+		left: initial;
+		right: 5vw;
+		bottom: 5vh;
+		top: 15vh;
+		text-align: right;
+	    @include media($mobile) {
+	    	left: 10%;
+	    	    right: 0;
+	    	    bottom: 0;
+	    	    text-align: right;
+	    	    width: 80%;
+	    	    top: initial;
+		}
 		
 		img {
 			height: 100%;
+		    @include media($mobile) {
+		    	height: auto;
+		    	width: 100%;
+			}
 		}
 	}
 
@@ -575,6 +606,21 @@ left: initial;
 
 
 .sec-gallery {
+
+	.fp-tableCell {
+		@include media($mobile) {
+			height: 100% !important;
+		}
+	}
+	.owl-height {
+		@include media($mobile) {
+			height: 250px !important;
+		}
+	}
+
+
+
+
 	
 	.item-title {
 		position: relative;
@@ -585,6 +631,13 @@ left: initial;
 	    width: 40vw;
 	    z-index: 1;
 		
+		@include media($mobile) {
+			left: 0;
+			width: 100%;
+			position: relative;
+			top: 40px;
+		}
+		    
 		img {
 			width: 100%;
 		}
@@ -614,6 +667,12 @@ left: initial;
 		}
 	}
 
+	.owl-carousel .owl-stage {
+		@include media($mobile) {
+			height: 310px !important;
+		}
+	}
+
 	.owl-prev {
 		background: url('/img/home/left-arrow.svg') !important;
 		left: -20vw;
@@ -629,6 +688,19 @@ left: initial;
 	.owl-carousel {
 		position: absolute;
 		top: 50vh;
+		@include media($mobile) {
+			position: relative;
+			top: 0px;
+			height: 260px;
+			
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+
+
 	}
 	.svg-circle {
 		left: 30vw;
@@ -656,6 +728,16 @@ left: initial;
 	    bottom: initial;
 	    top: 35vh;
 	    width: 30vw;
+	    
+	    @include media($mobile) {
+	    	left: 0;
+	    	right: 0;
+	    	bottom: initial;
+	    	top: 20px;
+	    	width: 100%;
+	    	position: relative;
+	    }
+
 		
 		img {
 			width: 100%;
@@ -672,6 +754,15 @@ left: initial;
 		top: 35vh;
 		width: 30vw;
 		
+	    @include media($mobile) {
+	    	left: 0;
+	    	right: 0;
+	    	bottom: initial;
+	    	top: 30px;
+	    	width: 100%;
+	    	position: relative;
+	    }
+		
 		img {
 			width: 100%;
 		}
@@ -682,6 +773,14 @@ left: initial;
 		left: 50vw;
 		font-size: 12px;
 		line-height: 22px;
+		@include media($mobile) {
+			top: 0;
+			bottom: initial;
+			left: 0;
+			font-size: 10px;
+			line-height: 22px;
+			position: relative;
+		}
 	}
 }
 
@@ -692,7 +791,17 @@ left: initial;
 	    bottom: initial;
 	    top: 45vh;
 	    width: 70vw;
+	    
+	    @include media($mobile) {
+	    	left: initial;
+	    	right: 0;
+	    	bottom: initial;
+	    	top: 69vh;
+	    	width: 70vw;
+	    }
 		
+
+
 		img {
 			width: 100%;
 		}
@@ -716,6 +825,15 @@ left: initial;
 	    bottom: initial;
 	    top: 25vh;
 	    width: 40vw;
+	    
+	    @include media($mobile) {
+	    	left: 0;
+	    	right: initial;
+	    	bottom: initial;
+	    	top: 55px;
+	    	width: 100%;
+	    	position: relative;
+	    }
 		
 		img {
 			width: 100%;
@@ -729,6 +847,17 @@ left: initial;
 	    text-align: left;
 	    bottom: initial;
 	    width: 210px;
+	    
+	    @include media($mobile) {
+	    	position: absolute;
+	    	right: 15px;
+	    	bottom: initial;
+	    	z-index: 2;
+	    	width: 100%;
+	    	left: initial;
+	    	text-align: right;
+	    }
+
 	}
 	.item-image-quote {
 		position: absolute;
@@ -745,6 +874,14 @@ left: initial;
 		bottom: initial;
 		top: 15vh;
 		width: 25vw;
+		@include media($mobile) {
+			left: initial;
+			right: 0;
+			bottom: initial;
+			top: 15vh;
+			width: 100%;
+			z-index: 2;
+		}
 		
 		img {
 			width: 100%;
@@ -757,6 +894,14 @@ left: initial;
 		z-index: 9;
 		position: absolute;
 		width: 45vw;
+		@include media($mobile) {
+			right: 0;
+		    top: initial;
+		    bottom: 20px;
+		    z-index: 9;
+		    position: absolute;
+		    width: 100%;
+		}
 		
 		img {
 			width: 100%;
@@ -769,6 +914,13 @@ left: initial;
 		bottom: initial;
 		top: 25vh;
 		width: 40vw;
+		@include media($mobile) {
+			left: initial;
+		    right: 0;
+		    bottom: initial;
+		    top: 70px;
+		    width: 100%;
+		}
 		
 		img {
 			width: 100%;
@@ -782,6 +934,18 @@ left: initial;
 		text-align: left;
 		bottom: 15vh;
 		left: 5vw;
+		@include media($mobile) {
+			position: absolute;
+			right: initial;
+			top: initial;
+			z-index: 2;
+			text-align: left;
+			bottom: 25vh;
+			left: 11px;
+			font-size: 13px;
+			line-height: 22px;
+			width: 100%;
+		}
 	}
 	.svg-circle {
 	    left: 22vw;
@@ -796,6 +960,13 @@ left: initial;
 		left: 5vw;
 		top: 40vh;
 		z-index: 2;
+		@include media($mobile) {
+			position: absolute;
+			left: 5vw;
+			bottom: 35vh;
+			z-index: 2;
+			top: initial;
+	    }
 		
 		img {
 			width: 70%;
@@ -807,6 +978,13 @@ left: initial;
     bottom: 5vh;
     left: 5vw;
     font-size: 14px;
+	@include media($mobile) {
+		position: absolute;
+		bottom: 15vh;
+		left: 5vw;
+		font-size: 14px;
+		line-height: 25px;
+    }
 }
 	.item-image {
 		position: absolute;
@@ -837,6 +1015,15 @@ left: initial;
 		left: initial;
 		top: initial;
 		width: 40vw;
+		@include media($mobile) {
+			position: absolute;
+			right: 0;
+			bottom: 18vh;
+			z-index: 2;
+			left: initial;
+			top: initial;
+			width: 100%;
+		}
 		
 		img {
 			width: 100%;
@@ -871,12 +1058,22 @@ left: initial;
 .sec-por-amor {
 	.item-title {
 		position: absolute;
-		    right: initial;
-		    bottom: initial;
-		    z-index: 2;
-		    left: 26vw;
-		    top: 45vh;
-		    width: 30vw;
+		right: initial;
+		bottom: initial;
+		z-index: 2;
+		left: 26vw;
+		top: 45vh;
+		width: 30vw;
+		
+		@include media($mobile) {
+			position: absolute;
+			right: initial;
+			bottom: 30px;
+			z-index: 2;
+			left: 0;
+			width: 100%;
+			top: initial;
+		}
 		
 		img {
 			width: 100%;
@@ -891,6 +1088,16 @@ left: initial;
 		bottom: initial;
 		width: 45vw;
 		
+		@include media($mobile) {
+			position: relative;
+			right: initial;
+			top: 0;
+			z-index: 2;
+			left: 0;
+			bottom: initial;
+			width: 100%;
+		}
+		
 		img {
 			width: 100%;
 		}
@@ -904,6 +1111,15 @@ left: initial;
 		left: initial;
 		width: 70vh;
 		top: initial;
+		@include media($mobile) {
+			position: absolute;
+			right: 15vw;
+			bottom: initial;
+			z-index: 1;
+			left: 0;
+			width: 100%;
+			top: 130px;
+		}
 		img {
 			width: 100%;
 		}
@@ -922,6 +1138,15 @@ left: initial;
 	    left: 25vw;
 	    text-align: right;
 	    line-height: 22px;
+	    @include media($mobile) {
+	    	position: absolute;
+	    	font-size: 11px;
+	    	top: initial;
+	    	bottom: 24vh;
+	    	left: 25vw;
+	    	text-align: right;
+	    	line-height: 22px;
+	    }
 	}
 }
 
@@ -933,16 +1158,30 @@ left: initial;
 		top: 15vh;
 		z-index: 2;
 		width: 40vw;
+		@include media($mobile) {
+			left: 0;
+			top: 23vh;
+			z-index: 2;
+			width: 100%;
+		}
 		img {
 			width: 100%;
 		}
 	}
 	.item-image-quote {
 		right: 18vw;
-		    top: 51vh;
-		    z-index: 2;
-		    left: initial;
-		    position: absolute;
+		top: 51vh;
+		z-index: 2;
+		left: initial;
+		position: absolute;
+		@include media($mobile) {
+			right: 0;
+			top: 56vh;
+			z-index: 2;
+			left: initial;
+			position: absolute;
+			width: 100%;
+		}
 	}
 	.item-quote {
 		left: initial;
@@ -951,6 +1190,16 @@ left: initial;
 		right: 7px;
 		position: relative;
 		text-align: right;
+		@include media($mobile) {
+			left: 0;
+			top: initial;
+			z-index: 2;
+			right: 0;
+			position: absolute;
+			text-align: right;
+			width: 100%;
+			bottom: 25vh;
+		}
 	}
 	.item-title {
 		left: initial;
@@ -958,6 +1207,17 @@ left: initial;
 		top: 25vh;
 		z-index: 2;
 		right: 15vw;
+		@include media($mobile) {
+			left: initial;
+			position: absolute;
+			top: 50px;
+			z-index: 2;
+			right: 0;
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
 	}
 
 	.item-misc {
@@ -965,14 +1225,34 @@ left: initial;
 	    right: 50vh;
 	    bottom: 20vh;
 	    z-index: 11;
+	    @include media($mobile) {
+	    	position: absolute;
+	    	left: 0;
+	    	bottom: 30px;
+	    	z-index: 11;
+	    	width: 70%;
+	    	right: initial;
+	    }
 	}
 
 	.item-title-2 {
 		left: 7vw;
-		    bottom: 5vh;
-		    z-index: 2;
-		    right: initial;
-		    position: absolute;
+		bottom: 5vh;
+		z-index: 2;
+		right: initial;
+		position: absolute;
+		
+		@include media($mobile) {
+			left: 0;
+			bottom: 10vh;
+			z-index: 2;
+			right: initial;
+			position: absolute;
+		
+			img {
+				width: 100%;
+			}
+		}
 	}
 }
 
